@@ -1,0 +1,41 @@
+body {
+  padding: 1rem;
+  margin: 0;
+  font-family: Poppins;
+}
+
+.card {
+  background-color: rgb(80, 80, 80);
+  border-radius: 15px;
+  color: rgb(204, 204, 204);
+  display: flex;
+
+  > .left {
+    flex: 2;
+    background-image: url("../img/bg_img.jpg");
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    .top {
+      > .day {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+    }
+
+    .bottom {
+      font-size: 2rem;
+      font-weight: 700;
+      .weather {
+        font-size: 1rem;
+      }
+    }
+  }
+  > .right {
+    flex: 3;
+  }
+}
